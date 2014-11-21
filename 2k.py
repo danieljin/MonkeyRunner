@@ -105,7 +105,7 @@ while (count < 100):
 
     #proceed back to beginning
     print "proceeding"
-    for i in range(0, 2):
+    for i in range(0, 4):
         time.sleep(1)
         device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
         device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)

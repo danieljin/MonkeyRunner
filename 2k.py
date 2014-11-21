@@ -53,6 +53,7 @@ while (count < 100):
         device.touch(500, 1500, MonkeyDevice.DOWN_AND_UP)
     print "waiting"
     time.sleep(2)
+
     #3rd player
     print "choosing 3rd player"
     device.touch(400, 1800, MonkeyDevice.DOWN_AND_UP)
@@ -66,6 +67,7 @@ while (count < 100):
         device.touch(500, 1500, MonkeyDevice.DOWN_AND_UP)
     print "waiting"
     time.sleep(2)
+
     #4th player
     print "choosing 4th player"
     device.touch(700, 1800, MonkeyDevice.DOWN_AND_UP)
@@ -79,7 +81,8 @@ while (count < 100):
         device.touch(500, 1500, MonkeyDevice.DOWN_AND_UP)
     print "waiting"
     time.sleep(2)
-    #2nd player
+
+    #5th player
     print "choosing 5th player"
     device.touch(200, 1800, MonkeyDevice.DOWN_AND_UP)
     print "rapid clicking"
@@ -92,20 +95,23 @@ while (count < 100):
         device.touch(500, 1500, MonkeyDevice.DOWN_AND_UP)
     print "waiting"
     time.sleep(2)
+
     #clicking prize cars
     print "clicking cards"
     for i in range(0, 100):
         for j in range(20, 160):
             device.touch(i*10, j*10, MonkeyDevice.DOWN_AND_UP)
     time.sleep(1)
+
     #proceed back to beginning
     print "proceeding"
-    device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
-    device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
-    device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
-    device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
-    device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
-    time.sleep(5)
+    for i in range(0, 2):
+        time.sleep(1)
+        device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
+        device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
+        device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
+        device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
+        device.touch(500, 1800, MonkeyDevice.DOWN_AND_UP)
 
     count +=1
 
